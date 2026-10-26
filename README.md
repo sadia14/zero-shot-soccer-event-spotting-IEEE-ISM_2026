@@ -10,7 +10,7 @@ Sadia Kamal, Mahmudul Hasan, and Tony Braskich.
 
 This work investigates zero-shot soccer event spotting using general-purpose multimodal models without task-specific parameter fine-tuning. Full-length soccer broadcasts are segmented into overlapping clips and represented using sparse visual storyboards together with aligned commentary transcripts.
 
-The evaluation consists of three professionally produced soccer broadcasts manually annotated for temporal event intervals.
+The evaluation consists of three soccer broadcasts manually annotated for temporal event intervals.
 
 ## Event Categories
 
