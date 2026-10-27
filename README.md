@@ -30,12 +30,12 @@ Across the three matches, the dataset contains **130 manually annotated ground-t
 ```text
 .
 ├── README.md
-├── video_urls.csv
+├── video_urls.docx
 ├── annotations/
 │   ├── betis_vs_barcelona.xlsx
 │   ├── city_vs_liverpool.xlsx
 │   └── city_vs_united.xlsx
-└── metadata/
+└── results/
     └── event_taxonomy.csv
 ```
 
