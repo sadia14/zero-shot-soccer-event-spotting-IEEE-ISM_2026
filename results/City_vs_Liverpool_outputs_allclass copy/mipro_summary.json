@@ -1,0 +1,394 @@
+{
+  "configuration": {
+    "seed": 42,
+    "mipro_auto": null,
+    "num_candidates": 6,
+    "num_trials": 12,
+    "minibatch_size": 5,
+    "full_eval_steps": 5,
+    "classification_weight": 0.85,
+    "timestamp_weight": 0.15,
+    "timestamp_tolerance_sec": 5.0,
+    "data_aware_proposer": false,
+    "trace_aware_proposer": true,
+    "dataset_csv": "City_vs_Liverpool_outputs_allclass/mipro_dataset.csv"
+  },
+  "dataset_sizes": {
+    "train": 31,
+    "val": 11,
+    "test": 10
+  },
+  "baseline_validation": {
+    "name": "baseline_validation",
+    "n": 11,
+    "optimization_metric": 0.7272727272727273,
+    "classification_accuracy": 0.7272727272727273,
+    "macro_f1_represented": 0.8444444444444444,
+    "macro_f1_events_only": 0.8800000000000001,
+    "temporal_mae_sec": 0.0,
+    "prediction_csv": "City_vs_Liverpool_outputs_allclass/baseline_validation_predictions.csv",
+    "per_class": {
+      "kickoff": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "goal": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "penalty": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "red card": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "yellow card": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "corner": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "miss": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "shot": {
+        "support": 3,
+        "tp": 1,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1": 0.4
+      },
+      "no important event": {
+        "support": 4,
+        "tp": 3,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.6666666666666665
+      }
+    }
+  },
+  "baseline_test": {
+    "name": "baseline_test",
+    "n": 10,
+    "optimization_metric": 0.5,
+    "classification_accuracy": 0.5,
+    "macro_f1_represented": 0.42000000000000004,
+    "macro_f1_events_only": 0.375,
+    "temporal_mae_sec": 0.0,
+    "prediction_csv": "City_vs_Liverpool_outputs_allclass/baseline_test_predictions.csv",
+    "per_class": {
+      "kickoff": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "goal": {
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "penalty": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "red card": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "yellow card": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "corner": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "miss": {
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shot": {
+        "support": 2,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "no important event": {
+        "support": 5,
+        "tp": 3,
+        "fp": 2,
+        "fn": 2,
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6
+      }
+    }
+  },
+  "optimized_instruction": "Analyze the chronological 15-frame storyboard (approximately 0\u201314 seconds, ordered left-to-right and top-to-bottom) together with its aligned commentary. Identify exactly one dominant event that actually occurs in this clip.\n\nFirst trace the full sequence: setup \u2192 decisive action or referee decision \u2192 visible outcome. Treat commentary only as supporting evidence because it may be early, delayed, or refer to prior play. Do not count a replay, recap, repeated angle, celebration, or retrospective commentary as a new event.\n\nChoose exactly one label:\n- kickoff: play starts or a half restarts from the center circle; do not use for other restarts.\n- goal: strong evidence shows the ball crossed the line and the goal was awarded, such as the ball in the net, score change, referee confirmation, aligned commentary, or sustained celebration.\n- penalty: a penalty is clearly awarded, prepared, or taken; contact in the box alone is insufficient. If the kick\u2019s outcome is shown, label goal, miss, or shot instead.\n- red card: a sending-off is visibly shown or explicitly confirmed, including a second yellow leading to dismissal.\n- yellow card: a booking is visibly shown or explicitly confirmed; a foul or referee confrontation alone is insufficient.\n- corner: a corner is clearly awarded or taken. If it leads to a visible attempt in the clip, label the attempt\u2019s later outcome instead.\n- miss: an intentional attempt is completed and clearly finishes off target (wide, over, or otherwise missing). Establish both attempt and outcome.\n- shot: an intentional attempt is completed and is saved, blocked, on target, or has an unresolved final outcome. Do not confuse crosses, passes, clearances, or attacking buildup with shots.\n- no important event: no listed event is established with adequate evidence.\n\nIf multiple labels apply to the same sequence, use this priority:\ngoal > red card > yellow card > penalty > miss > shot > corner > kickoff > no important event.\n\nReturn:\n- event_type: exactly one label above.\n- time_in_clip_sec: the approximate time of the decisive action or confirmed outcome, from 0 to 15; use -1 only for no important event. For a miss, prefer when the off-target outcome becomes clear; for a goal, prefer when scoring is confirmed; for cards or penalties, prefer the referee decision or visible confirmation.\n- confidence: a number from 0.0 to 1.0, reduced when the action, outcome, or replay status is ambiguous.\n- evidence: one or two short, factual observations grounded in the storyboard and/or transcript. Do not add unsupported details.",
+  "optimized_validation": {
+    "name": "optimized_validation",
+    "n": 11,
+    "optimization_metric": 1.0,
+    "classification_accuracy": 1.0,
+    "macro_f1_represented": 1.0,
+    "macro_f1_events_only": 1.0,
+    "temporal_mae_sec": 0.0,
+    "prediction_csv": "City_vs_Liverpool_outputs_allclass/optimized_validation_predictions.csv",
+    "per_class": {
+      "kickoff": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "goal": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "penalty": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "red card": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "yellow card": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "corner": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "miss": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "shot": {
+        "support": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "no important event": {
+        "support": 4,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "optimized_test": {
+    "name": "optimized_test",
+    "n": 10,
+    "optimization_metric": 0.4,
+    "classification_accuracy": 0.4,
+    "macro_f1_represented": 0.3888888888888889,
+    "macro_f1_events_only": 0.375,
+    "temporal_mae_sec": 0.0,
+    "prediction_csv": "City_vs_Liverpool_outputs_allclass/optimized_test_predictions.csv",
+    "per_class": {
+      "kickoff": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "goal": {
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "penalty": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "red card": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "yellow card": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "corner": {
+        "support": 0,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "miss": {
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "shot": {
+        "support": 2,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "no important event": {
+        "support": 5,
+        "tp": 2,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444445
+      }
+    }
+  }
+}

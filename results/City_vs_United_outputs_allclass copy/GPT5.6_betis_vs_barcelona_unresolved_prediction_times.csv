@@ -1,0 +1,1 @@
+clip_file,clip_start_sec,clip_end_sec,clip_start_time,clip_end_time,event_detected,event_type,pred_event_type,time_in_clip_sec,predicted_video_time_sec,predicted_video_time,confidence,evidence,transcript,error,parsed_event_detected,raw_pred_event_sec,pred_event_sec,time_source
